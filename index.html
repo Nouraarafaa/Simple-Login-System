@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+    <div class="form-container" id="loginFormContainer">
+        <h2>Smart Login System</h2>
+        <form id="loginform">
+            <input type="email" name="email" id="loginEmail" placeholder="Enter your e-mail" required>
+            <input type="password" name="password" id="loginPassword" placeholder="Enter your password" required>
+            <button type="submit" id="login">Login</button>
+        </form>
+        <p id="loginErrorMessage" class="error-message" style="display: none;">Invalid E-mail or password!</p>
+        <p>Don’t have an account?<a href="#" id="signup">Sign Up</a></p>
+    </div>
+    <div class="form-container" id="registerFormContainer" style="display: none;">
+        <h2>Smart Login System</h2>
+        <form id="registerform">
+            <input type="text" name="name" id="registerName" placeholder="Enter your name" required>
+            <input type="email" name="email" id="registerEmail" placeholder="Enter your email" required>
+            <input type="password" name="password" id="registerPassword" placeholder="Enter your password" required>
+            <button type="submit" id="sign-up">Sign Up</button>
+        </form>
+        <p id="registerErrorMessage" class="error-message" style="display: none;">E-mail is already exists!</p>
+        <p>You have an account?<a href="#" id="signin">Sign in</a></p>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
